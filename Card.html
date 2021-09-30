@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1</title>
     <style>
-        .card{
+        .card-1 {
+            float: left;
             width: 280px;
             height: 230px;
             box-shadow: 5px 5px 5px gray;
             border-radius: 5px 5px 5px 5px;
-            margin-bottom: 10px;
         }
 
-        .card .card-image{
+        .card-1 .card-image {
             /**
             Q1:The card-image cannot inherit the width from card
             */
@@ -23,7 +24,7 @@
             border-radius: 5px 5px 0px 0px;
         }
 
-        .card .icon{
+        .card-1 .icon {
             width: 30px;
             height: 30px;
             position: relative;
@@ -31,19 +32,19 @@
             top: 20px;
         }
 
-        .card .side-tag{
+        .card-1 .side-tag {
             width: 80px;
             text-align: center;
             font-size: 5px;
             color: white;
             background-color: royalblue;
-            border-radius:  5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
             position: relative;
             top: -240px;
             left: 190px;
         }
-        
-        .card .card-name{
+
+        .card-1 .card-name {
             width: fit-content;
             font-family: fantasy;
             position: relative;
@@ -51,7 +52,7 @@
             left: 10px;
         }
 
-        .card .card-body{
+        .card-1 .card-body {
             font-size: 3px;
             width: 200px;
             position: relative;
@@ -59,36 +60,77 @@
             left: 5px;
         }
 
-        .card-1 {
-            width: 280px;
-            height: 230px;
-            box-shadow: 5px 5px 5px gray;
-            border-radius: 5px 5px 5px 5px;
+        .card-2{
+            float: left;
+            padding-left: 10px;
         }
 
-        .card-1 .card-image{
+        .card-2 .card-image {
+            width: 310px;
+            height: 200px;
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 5px 5px 5px 5px;
+            position:absolute;
+        }
+
+        .card-2 .side-tag{ 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 10px;
+            color: white;
+            position: relative;
+            left: 240px;
+            bottom:20px;
+        }
+
+        .card-2 .card-name{
+            color:white;
+            font-size: 20px;
+            font-weight: 100;
+            position: relative;
+            top: 160px;
+            left: 20px;
+        }
+
+        .card-2 .card-date{
             width: 280px;
-            height: 150px;
-            border-radius: 5px 5px 0px 0px;
+            height: 50px;
+            padding-left: 15px;
+            border-left-style: inset;
+            border-color: rgb(224, 127, 200);
+            border-width: 5px;
+            color:rgb(224, 127, 200);
+            position: relative;
+            top: 70px;
         }
     </style>
 </head>
+
 <body>
-    <div class = "card">
-        <img src = ".\assests\SydenyOpera.PNG" alt="SydneyOpera" class="card-image">
-        <img src=".\assests\Icon.PNG" alt="thumb-up" class="icon" >
-        <div class = "card-name"> Sydney Opera</div>
-        <div class = "card-body">
+
+    <div class="card-1">
+        <img src=".\assests\SydenyOpera.PNG" alt="SydneyOpera" class="card-image">
+        <img src=".\assests\Icon.PNG" alt="thumb-up" class="icon">
+        <div class="card-name"> Sydney Opera</div>
+        <div class="card-body">
             <p> Bennelong Point, Sydney NSW 2000</p>
         </div>
-        <div class ="side-tag">
+        <div class="side-tag">
             <p>Australia</p>
         </div>
     </div>
 
-    <div class="card-1">
+    <div class="card-2">
         <img src=".\assests\St Patrick's Cathedral.jpg" alt="St.Patrick'sCathedral" class="card-image">
+        <div class="card-name">St.Patrick's Cathedral</div>
+        <div class="side-tag">
+            <p>Australia</p>
+        </div>
+        <div class="card-date">November 2017</div>
     </div>
 
+
+
+
 </body>
+
 </html>
